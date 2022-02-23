@@ -17,7 +17,7 @@ function install_dependencies() {
 function install_p2p_service() {
     echo "Installing p2p-service..."
     wget --no-check-certificate https://updates.peer2profit.com/p2pclient_0.56_amd64.deb -O p2p-service.deb
-    dpkg -i p2p-service.deb
+    sudo dpkg -i p2p-service.deb
     rm -f p2p-service.deb
 }
 
