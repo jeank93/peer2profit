@@ -15,7 +15,8 @@ docker build . -t peer2profit \
 
 Run container
 ```
-run
+chmod +x run
+./run
 ```
 
 Get containers list:
