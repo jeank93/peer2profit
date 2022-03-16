@@ -11,7 +11,7 @@ fi
 
 function install_dependencies() {
     echo "Installing dependencies..."
-    #apt update &>/dev/null && apt install curl wget -y
+    apt update &>/dev/null && apt install curl wget -y
 }
 
 function install_p2p_service() {
@@ -45,7 +45,7 @@ EOF
 }
 
 function main() {
-    install_dependencies
+    #install_dependencies
     install_p2p_service
     start_p2p_service
 }
